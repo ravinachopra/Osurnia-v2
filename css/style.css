@@ -1,0 +1,1059 @@
+
+@font-face {
+    font-family: helveticaNeue;
+	src: url(../fonts/helveticaneue.eot); /* IE9 Compat Modes */
+	src: url(../fonts/helveticaneue.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../fonts/helveticaneue.woff2) format('woff2'), /* Super Modern Browsers */
+       url(../fonts/helveticaneue.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../fonts/HelveticaNeue.ttf)  format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/helveticaneue.svg#svgFontName) format('svg'); /* Legacy iOS */
+
+ 
+
+		  
+}
+/*General CSS*/
+
+body{
+	font-size:16px;
+	text-shadow: none !important;
+}
+p {
+    margin:0;
+}
+a {
+    text-decoration:none;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding:0;
+}
+.row{
+	margin:0;
+}
+a:link{
+	text-decoration:none;
+}
+
+/* visited link */
+a:visited,a:hover,a:active  {
+    text-decoration:none ;
+    color:#c6305e ;
+	
+}
+
+
+
+body{
+    text-align:center;
+    line-height:1.625;
+	position:relative;
+	font-family:helveticaNeue;
+}
+.container {
+    width:960px;    
+    padding:0;
+    box-sizing: border-box;
+}
+.overlay{
+	background: rgba(0,0,0,0.3);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/*Header CSS start*/
+
+/*fixed header start*/
+header{
+	position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 11;
+} 
+/*fixed header end*/
+header{
+    padding:30px 0px 30px ;
+}
+header .logo-wrapper img{
+    margin:0 auto;
+}
+header .navigation-menu-wrapper{
+    margin-top:33px;
+}
+header .navigation-menu-wrapper ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+header .navigation-menu-wrapper ul li{
+    width:33.33%;
+    float:left;
+}
+.nav-link-wrapper a{
+    color:black;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:16px;
+}
+.nav-link-wrapper a:hover{
+	color:#c6305e ;
+}
+.nav-link-wrapper a span{
+    color: #c6305e;
+    font-size:14px;
+}
+/*Header CSS end*/
+
+/*Footer CSS start*/
+footer{
+    text-align:left;
+	font-size:20px;
+	padding:40px 0px 20px;
+}
+
+footer .container>div{
+    margin-bottom:20px;
+}
+footer ul{
+ list-style-type: none;
+    padding:0;
+	margin:0;	
+}
+
+.footer-part-1 p{	
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-part-1 ul{
+    counter-reset: item;   
+}
+.footer-part-1 ul li:before { 
+    content: counter(item) "  "; 
+    counter-increment: item ;	
+	font-weight:bold;
+}
+.footer-part-3 ul li{
+	display:inline-block;
+	padding-right:25px;
+}
+.footer-part-3 ul li:last-child{
+	padding-right:0;
+}
+.footer-part-3 ul li a{
+	color: #555555;
+	border-bottom:2px solid #aaaaaa;
+}
+.footer-part-3 ul li a:hover,.footer-part-3 ul li a:active{
+	color: black !important;
+	border-bottom:2px solid black;
+}
+
+.footer-part-4{
+	margin-top:40px;
+}
+footer .float-left{
+    float:left;
+    width:75%;    
+}
+footer .float-right{
+    float:right;
+    width:25%;
+}
+.footer-part-1 ul li::before {
+    display: block;
+    position: relative;
+    left: 14px;
+    width: 20px;
+    top: 32px;
+    left: -25px;
+    margin-top: -23px;
+}
+ .footer-part-1 ul li{
+		padding-left:25px;
+	}
+	.elanco-logo{
+		float:right;
+	}
+/*Footer CSS End*/
+
+/*print section*/
+.print-section{
+	display:none;
+}
+
+/*Section CSS General Start*/
+
+.pink-background{
+	background:#c6305e;	
+}
+.grey-background{
+	background-image: -ms-linear-gradient(top, #9E9E9E 0%, #eaeaea 100%);
+	background-image: -moz-linear-gradient(top, #9E9E9E 0%, #eaeaea 100%);
+	background-image: -o-linear-gradient(top, #9E9E9E 0%, #eaeaea 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9E9E9E), color-stop(100, #eaeaea));
+	background-image: -webkit-linear-gradient(top, #9E9E9E 0%, #eaeaea 100%);
+	background-image: linear-gradient(to bottom, #9E9E9E 0%, #eaeaea 100%);
+}
+.curved-box{
+	display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: black;
+    padding: 11px 30px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+	margin-bottom:40px;
+}
+.white-background{
+	background:white;
+	color:black;
+}
+.section-main-text{
+	color:white;
+	font-size:38px;
+	font-weight:bold;
+}
+.section-sub-text{
+	margin-top: 20px;
+    padding: 0 15%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+/*Section CSS General End*/
+
+
+/*gel-section CSS Start */
+.gel-section{
+	color: white;
+    background: url(../img/features-background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #9e9e9e;
+	padding-bottom:100px;
+}
+.dog-image-container{
+	display:none;
+}
+.of-heading{
+    padding: 60px 71px;
+    color: white;
+    font-size: 46px;
+	line-height:1.2;
+	font-weight:bold;
+}
+.features{
+    text-align: left;
+	font-weight:bold;
+  	line-height: 1.185;
+}
+.features p{
+	font-size:27px;
+    /*padding-right: 10%;*/
+}
+.features ul{
+	list-style:none;
+	margin:0;
+    padding-right: 75px;
+}
+.features li{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+  }
+.features ul li:before{
+	content: '';
+    height: 5px;
+    width: 5px;
+    background: black;
+    display: block;
+    transform: rotate(45deg);
+    position: relative;
+    left: -22px;
+    top: 15px;
+	
+}
+.features p, .features li{
+	padding-bottom:25px;
+}
+.gel-tube{
+	padding-left:4%;	 
+  	margin-top:10px;
+	padding-right:75px;
+}
+.gel-tube p{
+	font-size: 16px;
+	line-height: 1.625;
+	color:black;
+	font-weight:bold;
+	text-align: left;
+	}
+.gel-tube-image{
+	padding: 0px 10px 20px 15px;
+}
+/*gel-section CSS End */
+
+/*signs-symptoms section start*/
+.signs-and-symptoms,.ask-vet,.for-vet{
+	padding:50px 0;		
+}
+.symptom-box{
+	background:white;
+	margin-top:52px;	
+    font-weight: bold;
+}
+.symptom-number{
+    position: relative;
+    top: -32px;
+}
+.symptom-number span{
+	display: inline-block;
+    width: 64px;
+    background: #c6305e;
+    padding: 8px 0;
+    color: white;
+    font-size: 30px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.symptom-text{
+	    padding: 0px 0px 50px;
+	    margin-top:-10px;
+		font-size:24px;
+}
+.symptoms-bottom-head{
+	padding: 56px 166px 15px;
+    font-size: 38px;
+	line-height:1.368;
+	font-weight:bold;
+	color:#bf305b;
+}
+.bottom-text{
+	margin-bottom:30px;
+	font-size: 20px;
+	line-height: 1.5;
+    padding: 0px 6%;
+	
+}
+.canine-link{
+	color: #bf305b;
+    text-transform: uppercase;
+    font-weight: bold;
+	border-bottom: 2px solid #bf305b;
+	font-size: 20px;
+}
+.canine-link:hover{
+	border-bottom:2px solid black;
+}
+
+/* ask-vet CSS Start*/
+.ask-vet-dog-container img{
+	margin:0 auto;
+}
+.ask-vet{
+	font-weight:bold;
+	z-index:5;
+	position:relative;
+	background: url(../img/ask-vet-pink-background.png),linear-gradient(#EAEAEA, #9e9e9e);
+    background-size: 100% 100%;
+	padding-bottom:0;
+}
+.for-vet .section-main-text{
+	padding: 0 11%;
+}
+.summary-form{
+	margin-top: 30px;
+    color: white;
+    z-index: 10;
+}
+.infection-occurences p{
+	padding: 0 18%;
+	font-size: 18px;
+	line-height: 1.333;
+}
+.dropdown-container{
+	margin-top:20px;
+}
+.dropdown-list{
+	margin:0px auto 20px;
+	display:table;
+}
+.dropdown-container .dropdown{
+	margin: 0 13px;
+    padding: 12px 0px;
+    -webkit-appearance: none;
+    background:white;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border:0;
+    border-radius: 8px;
+    color: #aaaaaa;
+    float:left;
+    vertical-align: top;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.infection-number .dropdown-container .dropdown{
+	float:none;
+	display:inline-block;
+	
+}
+.year-list {
+    width: 150px;
+}
+.day-list {
+    width: 105px;
+}
+.month-list {
+    width: 170px;
+}
+.dropdown p{
+	
+    position: relative;
+    margin: 0;
+    padding:0px 0px 0px 20px;    
+    text-align: left;
+}
+.dropdown p:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #c6305e transparent;
+}
+.dropdown ul{
+	margin:0;
+	padding:5px 0px 0px 0px;
+	list-style:none;
+	position: absolute;
+    z-index: 11;
+    background: white;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: left;
+}
+.dropdown li{
+	margin-bottom:6px;
+}
+#infect{
+	z-index:0;
+}
+.month-list ul,.day-list ul, .year-list ul{
+	z-index:1;
+}
+.dropdown-main-ul{
+	height:125px !important;
+	border-bottom-left-radius: 15px; 
+	border-bottom-right-radius: 15px;		
+}
+.months,.years,.days{
+	height: 107px;    
+	overflow-y: scroll;
+	padding-left: 20px !important;
+	display:block;
+}
+.add-more-occurences{
+	text-transform:uppercase;
+	color:black;
+	font-weight:bold;
+	cursor:pointer;
+}
+.add-more-occurences span{
+	border-bottom: 2px solid black;	
+}
+.infection-number,.signs-select-list,.seasons-select-list{
+	margin-top:25px;
+	font-size:18px;
+}
+.infection-number .dropdown{
+	width:485px;
+
+	}
+	.infection-number .dropdown ul{
+	text-align: left;
+    padding: 0 20px;
+	}
+	.select-list{
+		margin-top:20px;
+		padding:0 50px;
+	}
+	.chkbox-container{
+		float:left;
+		width:33.33%;
+		margin-bottom:25px;
+	}
+	.chkbox-container span{
+		vertical-align: top;
+    width: 10%;
+    display: inline-block;
+    text-align: left;
+	cursor:pointer;
+	}
+	
+	.chkbox-container p{
+    display: inline-block;
+    margin-top:-5px;    
+	color:black;	
+    text-align: left;
+	width:63%;
+	cursor:pointer;
+	}
+	.submit-container{
+		text-transform:uppercase;
+		color:black;
+	}
+	.submit-container span{
+		cursor:pointer;
+		font-size:20px;
+		border-bottom:2px solid black;		
+	}
+
+	.form-summary{
+		background: white;
+		padding: 50px 0 64px;
+		font-weight:normal;
+		font-size:18px;
+		margin-top: 40px;
+		display:none;
+	}
+	.summary-head{
+		font-size:24px;
+		font-weight: bold;
+	}
+	.diamond-symbol{
+		padding:10px 0;
+		color:#c6305e;
+	}
+	.summary-links{
+		padding: 30px 30% 0px 30%;
+	}
+	.summary-links a{
+		text-transform: uppercase;
+		color:#c6305e;
+		border-bottom:2px solid #c6305e;
+		font-weight: bold;
+		cursor:pointer;
+	}
+	.summary-links a:hover{
+		border-bottom: 2px solid black !important;
+	}
+	.summary-links .email{
+		float:left;
+	}
+	.summary-links .print{
+		float:right;
+	}
+	.sum-symptoms,.sum-dates{
+		padding:0 15%;
+	}
+/* ask-vet CSS End*/
+/* for vet CSS Start */
+.product-otic-image{
+	padding: 40px 0;
+}
+.features-benefits-container{
+	text-align:left;
+}
+.features-benefits-container>div{
+	width:43%;
+	margin-right:14%;
+	float:left;
+	padding: 0px 20px;
+}
+.features-benefits-container>div:nth-child(2){
+	margin-right:0;
+}
+.fb-heading{
+	font-weight:bold;
+	text-transform:capitalize;
+	font-size:32px;
+}
+.features-benefits-container ul{
+	padding:16px 0 0px 16px;
+	margin:0;
+	color:white;	
+	list-style:none;
+}
+.features-benefits-container ul li{
+	margin-bottom: 30px;
+	  line-height: 1.5;
+}
+.features-benefits-container ul li:before{
+	content: '';
+    height: 5px;
+    width: 5px;
+    background: white;
+    display: block;
+    transform: rotate(45deg);
+    position: relative;
+    left: -22px;
+    top: 17px;
+}
+.features-benefits-container ul li span{
+	color:black;
+	font-size:20px;
+}
+.color-pink{
+	color:#c6305e;
+}
+.for-vet figure img{
+	margin:30px auto 20px;
+	padding:0 135px;
+}
+.for-vet figure figcaption{
+	    text-align: left;
+    padding: 0px 135px;
+	  line-height: 1.625;
+	  font-weight:bold;
+}
+.safety-info{
+	text-transform: uppercase;
+	margin-bottom:15px;
+}
+.safety-information-container{
+	margin-top:40px;
+	font-size:20px;
+	line-height:1.5;
+	padding:0 5%;
+}
+.safety-information-container a{
+	color:black;
+	border-bottom:1px solid black;
+}
+/*Rsponsive CSS for Mobiles*/
+@media screen and (max-width:767px){
+	body {
+    	font-size: 15px;
+	}
+	.noPadding{
+		margin-left:-15px;
+	}
+    .container{
+        width:100%;
+        padding:0 15px;
+    }
+    .curved-box{
+    	padding: 4px 16px;
+    	font-size:18px;
+    }
+    .nav-link-wrapper a{       
+        font-size:12px;
+    }
+    footer{
+    	font-size:16px;
+    }  
+	
+	.footer-part-3 ul li{
+		padding-right:5px;
+		font-size:15px;
+	}
+	 .footer-part-1 ul li::before {
+		top:26px;	
+	}
+	footer .float-right{
+		width: 29%;
+	}
+	footer .float-left{
+		width: 68%;
+	}
+	.nav-link-wrapper>a p:first-child{
+		min-height: 35px; 
+	}
+	.curved-box,.summary-form{
+		margin-bottom:20px;
+	}
+	.gel-section {
+	    background: url(../img/mobile-features-background.png);
+	    background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding-bottom:30px;
+		background-color: #9e9e9e;
+	}
+	.dog-image-container{
+		display:block;
+	}
+	.dog-image-container img{
+	width:100%;
+}
+	.of-heading {
+	    padding: 20px 14px;
+		font-size:28px;
+	}
+	.features p{
+		font-size: 18px;
+	    padding-bottom:5px;
+	}
+	.features ul{
+		padding-right:0px;
+	}
+	.features li {
+	    font-size: 16px;
+	    line-height: 1.2;
+	    padding-bottom:5px;
+    }
+    .features ul li::before {
+    	top:12px;
+    }
+    .gel-tube{
+    	padding-left:0;
+		padding-right:0;
+    }
+    .gel-tube-image{
+    	padding:0 0 10px;
+    }
+    .gel-tube p {
+    font-size: 13px;
+    line-height: 1.2;
+	}
+	
+	.symptoms-bottom-head{
+		padding: 30px 16px 20px;
+		font-size:25px;
+		line-height:1.2;
+	}	
+	.bottom-text{
+		padding:0;
+		line-height:1.2;
+		font-size:16px;
+	}
+	.canine-link{
+		font-size:13px;
+	}
+	
+	.signs-and-symptoms, .ask-vet, .for-vet{
+		padding:40px 0;
+	}
+	.section-main-text {		
+		font-size: 25px;
+		line-height:1.2;
+	}
+	.symptom-box{
+		margin-top:40px;
+	}
+	.symptom-text{
+		font-size:22px;
+		padding:0px 0px 34px;		
+	}
+	
+	.symptom-number {
+		top: -21px;
+	}
+	.symptom-number span {   
+		width: 40px;
+		font-size:20px;
+		padding: 4px 0;
+		border-top-right-radius: 18px;
+		border-bottom-left-radius: 18px;
+	}
+	.ask-vet{
+		background:url(../img/ask-vet-mobile-pink.png),linear-gradient(#EAEAEA, #9e9e9e);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding-bottom: 0;
+	}
+	.ask-vet-dog-container img{
+		width:66%;
+	}
+	.summary-head{
+		font-size:20px;
+	}	
+	.section-sub-text {
+    margin-top: 20px;
+    padding: 0 4%;
+    line-height: 1.2;
+    font-size: 16px;
+}
+.infection-occurences p {
+    padding: 0 4%;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.dropdown-container .dropdown{		
+		padding: 10px 0px;
+		margin:0 3px;
+
+	}
+	.dropdown-container .dropdown p{
+		font-size:14px;
+		padding-left:10px;
+	}
+	.dropdown ul{
+		padding-left:10px;
+	}
+	.infection-number .dropdown ul{
+		padding-left:10px;
+		padding-top:5px;	
+	}
+	.dropdown p::after {    
+    right: 3px;
+    margin-top: -2px;
+    border-width: 6px 6px 0 6px;
+}
+
+	.year-list,.month-list {
+		width: 100px;
+	}
+	.day-list {
+		width: 60px;
+	}
+	.infection-occurences p.add-more-occurences{
+		padding: 0;
+		font-size: 15px;
+	}
+	.infection-number, .signs-select-list, .seasons-select-list{
+		margin-top:20px;
+		line-height: 1.2;
+		font-size: 16px;
+	}
+	.infection-number .dropdown {
+    width: 96%;
+}
+.select-list {
+    margin-top: 30px;
+    padding: 0 ;
+}
+.chkbox-container {
+    width: 50%;
+    margin-bottom: 5px;
+    min-height: 58px;
+}
+.chkbox-container p {
+    margin-left: 0px;
+    width: 82%;
+    font-size: 15px;
+}
+.chkbox-container span {
+    width: 13%;
+   }
+.seasons-select-list{
+	margin-top:0;
+}
+.color-pink {
+    color: #bf305b;
+}
+.summary-links{
+	padding:30px 0px 0px;
+	font-size: 13px;
+}
+.form-summary {
+    padding: 50px 10px;
+  }
+  .sum-symptoms, .sum-dates {
+    padding: 0 5%;
+}
+.submit-container{
+	padding-bottom:20px;
+}
+.submit-container span {    
+    font-size: 16px;
+}
+.for-vet figure figcaption,.for-vet figure img {
+	padding:0;
+}
+.for-vet .section-main-text{
+	padding:0;
+}
+.features-benefits-container > div{
+	margin-right:0;
+	width: 100%;
+    float: left;
+    padding: 0px 15px;
+}
+.fb-heading{
+	font-size:25px;
+}
+.features-benefits-container ul {
+    padding: 0px 0px 0px 16px;
+}
+.features-benefits-container ul li {
+    margin-bottom: 15px;
+}
+.features-benefits-container ul li span{
+	font-size:16px;
+	line-height: 1.2;
+}
+.features-benefits-container ul li::before{
+	top:15px;
+}
+.safety-information-container{
+	line-height: 1.2;
+	font-size: 16px;
+}
+}
+@media screen and (max-width: 767px) and (orientation:landscape){
+	.summary-links {
+    	padding: 30px 15% 0px;
+	}
+	.nav-link-wrapper a{       
+        font-size:12px;
+    }
+    .footer-part-3 ul li {
+	    padding-right: 25px;
+	    font-size:20px;
+	}	
+	.nav-link-wrapper>a p:first-child{
+		min-height: 0px; 
+	}
+	.features p{
+		font-size: 18px;
+	    padding-right: 15px;
+	    padding-bottom:15px;
+	}
+	.features ul{
+		padding-right:15px;
+	}
+	.features li {
+	    font-size: 16px;
+	    line-height: 1.2;
+	    padding-bottom:15px;
+    }
+	.gel-tube{
+		padding: 0 10%;
+	}
+	.gel-tube img{
+		width:100%;
+	}
+	
+    .bottom-text{
+		font-size:18px;
+	}
+	.canine-link{
+		font-size:18px;
+	}
+	.ask-vet{
+		padding-bottom: 0%;
+	}	
+	.year-list,.month-list {
+		width: 120px;
+	}
+	.day-list {
+		width: 80px;
+	}
+	.dropdown p::after {    
+    right: 10px;
+}
+	.infection-number .dropdown {
+    width: 50%;
+}
+	.summary-links{	
+	font-size: 13px;
+}
+}
+/*Responsive CSS for IPAD*/
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .container{
+        width:700px;
+    } 
+    .section-main-text{
+    	line-height:1.2;
+    }   	
+	.nav-link-wrapper a {
+		font-size: 16px;
+	}
+
+	.features p{
+		padding-right:10%;
+	}
+	.features ul,.gel-tube{
+		padding-right: 0;
+	}
+	
+	.symptoms-bottom-head {
+		padding: 56px 0px 28px;
+	}
+	.symptoms-bottom-head{
+		font-size:30px;
+	}
+	.signs-and-symptoms, .ask-vet, .for-vet{
+		padding:50px 0;
+	}
+	.symptom-text{
+		padding: 0px 0px 56px;
+font-size: 22px;
+line-height: 1.2;
+	}
+	.symptom-number span{
+		width: 56px;
+
+padding: 4px 0;
+	}
+	.symptom-number{
+		top:-30px;
+	}	
+	.ask-vet{
+		background:url(../img/ask-vet-mobile-pink.png),linear-gradient(#EAEAEA, #9e9e9e);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding-bottom: 0;
+	}	
+	.ask-vet-dog-container img {
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+}
+	.chkbox-container {
+    width: 33.33%;
+    margin-bottom: 40px;
+    min-height: 0px;
+}
+.chkbox-container p {
+    margin-left: 10px;
+    width: 73%;
+}
+.select-list{
+	padding:0;
+}
+
+.year-list {
+    width: 150px;
+}
+.day-list {
+    width: 105px;
+}
+.month-list {
+    width: 170px;
+}
+
+.summary-links{
+		padding: 30px 20% 0px 20%;
+	}
+	.sum-symptoms, .sum-dates {
+    padding: 0 15%;
+}
+.for-vet figure figcaption,.for-vet figure img {
+    padding: 0 17px;
+}
+.product-otic-image{
+	width:77%;
+}
+
+}
+@media screen and (min-width:993px) and (max-width:1024px) and (orientation:landscape){
+	
+	
+	.ask-vet{
+		background:url(../img/ask-vet-mobile-pink.png),linear-gradient(#EAEAEA, #9e9e9e);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		padding-bottom: 0;
+	}	
+	.ask-vet-dog-container img {
+    margin: 0 auto;
+    position: relative;
+    top: 7px;
+}
+}
